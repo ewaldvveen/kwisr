@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5294d691-9480-4fee-ab5c-12c64d28d453/deploy-status)](https://app.netlify.com/sites/kwisr/deploys)
+
 # Kwisr
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.1.
