@@ -1,0 +1,9 @@
+@import 'variables';
+
+.kw-hdr {
+  background-color: $color-bgr-light;
+
+  & h1 {
+    display: none;
+  }
+}

@@ -34,7 +34,8 @@
             ],
             "stylePreprocessorOptions": {
               "includePaths": [
-                "src/styles"
+                "src/styles",
+                "src/styles/abstracts"
               ]
             },
             "scripts": []
@@ -102,7 +103,8 @@
             ],
             "stylePreprocessorOptions": {
               "includePaths": [
-                "src/styles"
+                "src/styles",
+                "src/styles/abstracts"
               ]
             },
             "scripts": []

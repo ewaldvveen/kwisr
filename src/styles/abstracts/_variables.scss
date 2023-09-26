@@ -6,6 +6,8 @@ $font-family-headings-fallback: serif;
 $font-family-handwriting: 'Caveat';
 
 // COLORS
+
+// Main pallette
 $color-primary: hsla(231, 54%, 43%, 1); // use with color-font-light
 $color-accent: hsla(16, 100%, 31%, 1); // use with color-font-light
 $color-bad: hsla(3, 100%, 68%, 1); // use with color-font-dark
@@ -13,3 +15,6 @@ $color-warning: hsla(30, 100%, 68%, 1); // use with color-font-dark
 $color-good: hsla(150, 100%, 68%, 1); // use with color-font-dark
 $color-font-dark: hsla(231, 54%, 3%, 1);
 $color-font-light: hsla(231, 54%, 98%, 1);
+
+// Backgrounds and borders
+$color-bgr-light: hsla(231, 24%, 98%, 1);
