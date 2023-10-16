@@ -1,0 +1,14 @@
+@import 'variables';
+@import 'layout/global';
+
+.kw-footer {
+  background-color: $color-accent;
+
+  & footer {
+    @include layout-global-page-element;
+  }
+
+  & p {
+    color: $color-font-dark;
+  }
+}

@@ -1,0 +1,22 @@
+@import 'variables';
+
+button {
+  display: flex;
+  flex-flow: row nowrap;
+  column-gap: 6px;
+  place-items: center;
+  background-color: $color-accent;
+  border-radius: 1rem;
+  box-shadow: $color-shadow-dark 0px 1px 4px;
+  padding: 6px 12px;
+
+  & span:first-child {
+    font-size: $font-size-btn;
+  }
+
+  & span:last-child {
+    font-size: $font-size-btn;
+    font-weight: $font-weight-semi-bold;
+    line-height: normal;
+  }
+}

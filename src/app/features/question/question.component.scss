@@ -1,0 +1,14 @@
+@import 'variables';
+@import 'layout/global';
+
+.kw-question {
+  background-color: $color-primary;
+
+  & section {
+    @include layout-global-page-element;
+
+    & p {
+      color: $color-font-light;
+    }
+  }
+}

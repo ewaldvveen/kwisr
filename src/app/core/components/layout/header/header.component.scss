@@ -1,7 +1,16 @@
 @import 'variables';
+@import 'layout/global';
 
 .kw-hdr {
   background-color: $color-bgr-light;
+
+  & header {
+    @include layout-global-page-element;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    place-items: center;
+  }
 
   & h1 {
     display: none;
