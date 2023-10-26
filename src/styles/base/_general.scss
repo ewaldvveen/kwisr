@@ -1,5 +1,6 @@
 a, body, p, span {
   font-family: $font-family-default, $font-family-default-fallback;
+  font-size: $font-size-md;
   color: $color-font-dark;
 }
 
@@ -10,7 +11,7 @@ h1, h2, h3, h4, h5, h6 {
 a {
   text-decoration: none;
 
-  &:hover {
+  &:hover, &:focus {
     color: $color-font-dark-hover;
     text-decoration: underline;
     cursor: pointer;
