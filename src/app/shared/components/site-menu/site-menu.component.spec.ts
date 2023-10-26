@@ -1,17 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { AngularSvgIconModule, SvgIconRegistryService } from 'angular-svg-icon';
-import { HeaderComponent } from './header.component';
-import { SiteMenuComponent } from '@shared/components/site-menu/site-menu.component';
+import { SiteMenuComponent } from './site-menu.component';
 
-describe('HeaderComponent', () => {
-  let component: HeaderComponent;
-  let fixture: ComponentFixture<HeaderComponent>;
+describe('SiteMenuComponent', () => {
+  let component: SiteMenuComponent;
+  let fixture: ComponentFixture<SiteMenuComponent>;
 
   const fakeSvgIconRegistryService = jasmine.createSpyObj(['loadSvg']);
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [HeaderComponent, SiteMenuComponent],
+      declarations: [SiteMenuComponent],
       imports: [AngularSvgIconModule],
       providers: [
         {
@@ -20,12 +19,13 @@ describe('HeaderComponent', () => {
         },
       ],
     });
-    fixture = TestBed.createComponent(HeaderComponent);
+
+    fixture = TestBed.createComponent(SiteMenuComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
 
-  it('should create the HeaderComponent', () => {
+  it('should create the SiteMenuComponent', () => {
     expect(component).toBeTruthy();
   });
 });

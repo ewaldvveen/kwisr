@@ -1,0 +1,12 @@
+.kw-icon-dark {
+  fill: $color-font-dark;
+
+  &--interactive:hover {
+    fill: $color-font-dark-hover;
+  }
+}
+
+.kw-icon-xl, .kw-icon-xl > svg {
+  width: $font-size-xl;
+  height: $font-size-xl;
+}

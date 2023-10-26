@@ -11,6 +11,9 @@ $font-family-handwriting: 'Caveat';
 
 // Font sizes
 $font-size-btn: 0.75rem;
+$font-size-md: 1rem;
+$font-size-l: 1.5rem;
+$font-size-xl: 2rem;
 
 // Font weights
 $font-weight-semi-bold: 600;
@@ -31,3 +34,6 @@ $color-font-light: hsla(231, 54%, 98%, 1);
 // Backgrounds, shadows and borders
 $color-bgr-light: hsla(231, 24%, 98%, 1);
 $color-shadow-dark: hsla(231, 54%, 75%, 1);
+
+// State
+$color-font-dark-hover: hsla(231, 4%, 3%, .7);
