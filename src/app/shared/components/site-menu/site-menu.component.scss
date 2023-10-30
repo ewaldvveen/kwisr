@@ -5,16 +5,16 @@
     display: none;
     position: fixed;
     top: 0;
-    left: -100vw;
+    right: -75vw;
     height: 100%;
     overflow-x: visible;
     overflow-y: auto;
-    transition: left 0.3s ease;
+    transition: right 0.3s ease;
     z-index: 999;
 
     &:target {
       display: block;
-      left: 0;
+      right: 0;
       outline: none;
 
       & .site-menu-close {
@@ -45,7 +45,7 @@
       row-gap: 2rem;
       place-items: center;
       min-height: 100%;
-      width: 100vw;
+      width: 75vw;
       background-color: $color-bgr-dark;
       list-style: none;
       margin: 0;
@@ -54,6 +54,7 @@
 
     & li a {
       display: block;
+      font-family: $font-family-headings, $font-family-headings-fallback;
       font-size: $font-size-l;
       color: $color-font-light;
 

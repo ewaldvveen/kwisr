@@ -14,6 +14,14 @@
   }
 }
 
+.kw-icon-blue {
+  fill: $color-primary;
+
+  &--interactive:hover {
+    fill: $color-primary-hover;
+  }
+}
+
 .kw-icon-xl, .kw-icon-xl > svg {
   width: $font-size-xl;
   height: $font-size-xl;

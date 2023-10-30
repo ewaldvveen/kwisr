@@ -4,6 +4,10 @@ a, body, p, span {
   color: $color-font-dark;
 }
 
+body {
+  background-color: $color-bgr-light;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: $font-family-headings, $font-family-headings-fallback;
 }
