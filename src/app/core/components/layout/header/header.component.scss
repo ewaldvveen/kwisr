@@ -1,5 +1,6 @@
 @import 'variables';
 @import 'layout/global';
+@import 'base/general';
 
 .kw-hdr {
   background-color: $color-bgr-light;
@@ -14,5 +15,50 @@
 
   & h1 {
     display: none;
+  }
+
+  &__nav {
+    display: flex;
+    flex-flow: row wrap;
+    column-gap: 3vw;
+    place-items: center;
+
+    &-login {
+      & span {
+        @include general-hide-on-mobile-and-tablet;
+        @include general-accent-font;
+      }
+    }
+  }
+}
+
+///////////
+// MEDIA QUERIES
+///////////
+@media only screen and (min-width: $medium-screen) {
+  .kw-hdr__nav {
+    flex-direction: row-reverse;
+
+    &-login {
+      display: flex;
+      flex-flow: row nowrap;
+      column-gap: 0.5rem;
+      place-items: center;
+      background-color: $color-primary;
+      border-radius: 24px;
+      padding: 0 1px 0 0.8rem;
+
+      & * {
+        color: $color-font-light;
+      }
+
+      & svg-icon {
+        fill: $color-font-light;
+
+        &:hover {
+          fill: $color-font-light-hover;
+        }
+      }
+    }
   }
 }

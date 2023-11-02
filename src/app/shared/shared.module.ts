@@ -6,6 +6,6 @@ import { AngularSvgIconModule } from 'angular-svg-icon';
 @NgModule({
   declarations: [SiteMenuComponent],
   imports: [CommonModule, AngularSvgIconModule],
-  exports: [SiteMenuComponent],
+  exports: [AngularSvgIconModule, SiteMenuComponent],
 })
 export class SharedModule {}
