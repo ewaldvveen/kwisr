@@ -2,18 +2,18 @@
   href="#site-menu"
   id="site-menu-toggle"
   class="site-menu-toggle"
-  aria-label="Open main site menu"
+  aria-label="Hoofdmenu openen"
 >
   <svg-icon src="assets/icons/hamburger-menu.svg" [class]="'kw-icon-xl kw-icon-blue kw-icon-blue--interactive'"></svg-icon>
 </a>
 <nav id="site-menu" class="site-menu-nav">
-  <a href="#site-menu-toggle" class="site-menu-close" aria-label="Close main site menu">
+  <a href="#site-menu-toggle" class="site-menu-close" aria-label="Hoofdmenu sluiten">
     <svg-icon src="assets/icons/close.svg" [class]="'kw-icon-xl kw-icon-light kw-icon-light--interactive'"></svg-icon>
   </a>
   <ul>
-    <li><a href="#">Kwissen</a></li>
-    <li><a href="#">Uitleg</a></li>
-    <li><a href="#">Registreren</a></li>
+    <li><a href="#" aria-label="Overzicht van alle kwissen">Kwissen</a></li>
+    <li><a href="#">Hoe werkt het?</a></li>
+    <li><a href="#" class="site-menu-nav--accent">Speel mee!</a></li>
   </ul>
 </nav>
 <a href="#site-menu-toggle" class="site-menu-backdrop" hidden></a>

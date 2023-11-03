@@ -1,7 +1,6 @@
-.page-container-element {
-  max-width: $max-page-size;
-}
-
 @mixin layout-global-page-element {
+  width: 100%;
+  max-width: $max-page-size;
+  margin: 0 auto;
   padding: 1.4rem;
 }

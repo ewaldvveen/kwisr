@@ -40,6 +40,10 @@
       }
     }
 
+    &--accent {
+      @include general-accent-link;
+    }
+
     & ul {
       display: flex;
       flex-flow: column;
@@ -101,7 +105,7 @@
         font-size: $font-size-md;
         color: $color-font-dark;
 
-        &:hover, &:focus {
+        &:hover, &:active, &:focus {
           color: $color-font-dark-hover;
         }
       }

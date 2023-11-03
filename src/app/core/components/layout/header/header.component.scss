@@ -4,6 +4,7 @@
 
 .kw-hdr {
   background-color: $color-bgr-light;
+  border-bottom: 0.5rem solid $color-accent;
 
   & header {
     @include layout-global-page-element;
@@ -24,6 +25,11 @@
     place-items: center;
 
     &-login {
+      &:hover, :active {
+        background-color: $color-bgr-dark-transparent;
+        text-decoration: none;
+      }
+
       & span {
         @include general-hide-on-mobile-and-tablet;
         @include general-accent-font;
@@ -40,6 +46,14 @@
     flex-direction: row-reverse;
 
     &-login {
+      display: inline-flex;
+    }
+  }
+}
+
+@media only screen and (min-width: $large-screen) {
+  .kw-hdr__nav {
+    &-login {
       display: flex;
       flex-flow: row nowrap;
       column-gap: 0.5rem;
@@ -54,10 +68,6 @@
 
       & svg-icon {
         fill: $color-font-light;
-
-        &:hover {
-          fill: $color-font-light-hover;
-        }
       }
     }
   }

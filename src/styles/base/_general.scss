@@ -8,10 +8,19 @@
   font-family: $font-family-headings, $font-family-headings-fallback;
 }
 
+@mixin general-accent-link {
+  font-weight: $font-weight-semi-bold;
+  color: $color-accent !important;
+
+  &:hover {
+    color: $color-accent-hover !important;
+  }
+}
+
 @mixin general-hide-on-mobile-and-tablet {
   display: none;
 
-  @media only screen and (min-width: $medium-screen) {
+  @media only screen and (min-width: $large-screen) {
     display: initial;
   }
 }
@@ -31,7 +40,7 @@ h1, h2, h3, h4, h5, h6 {
 a {
   text-decoration: none;
 
-  &:hover, &:focus {
+  &:hover, &:active, &:focus {
     color: $color-font-dark-hover;
     text-decoration: underline;
     cursor: pointer;
@@ -39,5 +48,15 @@ a {
 
   &:active {
     color: $color-accent;
+  }
+}
+
+.skip-link {
+  position: absolute;
+  top: -3em;
+  background: $color-font-light;
+
+  &:focus {
+    top: 0;
   }
 }
